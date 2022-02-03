@@ -11,7 +11,8 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    /* add font family */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
     *{
       margin: 0;
       padding: 0;
@@ -20,7 +21,9 @@
     body {
       background-color: hsl(217, 54%, 11%);
     }
-    /* add global text fonts */
+    h3, p{
+      font-family: Outfit;
+    }
 
     #outer-cont{
       max-width: 340px;
@@ -38,32 +41,35 @@
 
     #middle-content-cont h3{
       margin-bottom: 20px;
-      /* style the font */
+      font-weight: 600;
+      font-size: 22px;
+      color: hsl(0, 0%, 100%);
     }
     #middle-content-cont #nft-description{
-      margin-bottom: 10px;
-      /* style the font */
+      margin-bottom: 20px;
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);
     }
 
     #eth-price-time-left{
       border-bottom: 1px solid hsl(215, 32%, 27%);
       display: flex;
       justify-content: space-between; 
-      padding-bottom: 10px;
+      padding-bottom: 15px;
     }
     #eth-price{
       display: flex;
     }
     #eth-price p{
-      margin-left: 5px;
-      /* style the font */
+      margin-left: 10px;
+      color: hsl(178, 100%, 50%);
     }
     #time-left{
       display: inline-flex;
     }
     #time-left p{
-      margin-left: 5px;
-      /* style the font */
+      margin-left: 7px;
+      color: hsl(215, 51%, 70%);
     }
 
     #nft-creator{
@@ -78,7 +84,10 @@
     }
     #nft-creator p{
       align-self: center;
-      /* get the font to change colors after for Jules Wyvern */
+      color: hsl(215, 51%, 70%);
+    }
+    #nft-creator span{
+      color: hsl(0, 0%, 100%);
     }
   </style>
 </head>
@@ -105,7 +114,7 @@
 
     <div id="nft-creator">
       <img src="images/image-avatar.png" alt="">
-      <p>Creation of Jules Wyvern</p>
+      <p>Creation of <span> Jules Wyvern</span></p>
     </div>
   </div>
 
