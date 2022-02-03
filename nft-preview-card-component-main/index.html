@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -36,7 +36,20 @@
     #nft-img{
       width: 100%;
       border-radius: 10px;
+    }
+    .opacity{
+      opacity: 1;
+    }
+    .opacity:hover{
+      opacity: 0.5;
+    }
+    .on-hover{
+      background-color: hsl(178, 100%, 50%);
+      border-radius: 10px;
+      height: 280px;
       margin-bottom: 20px;
+      background-image: linear-gradient(90deg, transparent 50%, hsl(178,100%,50%) 50%);
+      background-size: 20px 20px;
     }
 
     #middle-content-cont h3{
@@ -44,6 +57,9 @@
       font-weight: 600;
       font-size: 22px;
       color: hsl(0, 0%, 100%);
+    }
+    #middle-content-cont h3:hover{
+      color: hsl(178, 100%, 50%);
     }
     #middle-content-cont #nft-description{
       margin-bottom: 20px;
@@ -89,12 +105,17 @@
     #nft-creator span{
       color: hsl(0, 0%, 100%);
     }
+    #nft-creator span:hover{
+      color: hsl(178, 100%, 50%);
+    }
   </style>
 </head>
 <body>
   <div id="outer-cont">
-    <img  id="nft-img" src="images/image-equilibrium.jpg" alt="nft art">
-    
+    <div class="on-hover">
+      <img  id="nft-img" class="opacity" src="images/image-equilibrium.jpg" alt="nft art">
+    </div>
+
     <div id="middle-content-cont">
       <h3>Equilibrium #3429</h3>
       <p id="nft-description">Our Equilibrium collection promotes balance and calm.</p>
